@@ -16,7 +16,7 @@ module FormsLab
 
       
 
-      erb "pirates"
+      erb :"pirates/show"
 
     end
 
