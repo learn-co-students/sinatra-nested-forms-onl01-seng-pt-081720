@@ -1,1 +1,38 @@
 <h1>Make your form here</h1>
+
+<%# structure for the params
+params = {
+    "pirate" => {
+        "name" => "", 
+        "weight" => "",
+        "height" => "", 
+        "ships" = {
+            first_ship => {
+                "name" = "", 
+                "type" = "",
+                "booty" = ""
+            }, 
+             second_ship => {
+                "name" = "", 
+                "type" = "",
+                "booty" = ""
+            }
+        }
+    }
+} %>
+
+<form method = "post" action = "/pirates">
+<h2>Pirate Name: <input type="text" name="pirate[name]"></h2>
+<h2>Pirate Weight: <input type="text" name="pirate[weight]"></h2>
+<h2>Pirate Height: <input type="text" name="pirate[height]"></h2>
+<br>
+<h2>First Ship: <input type="text" name="pirate[ships][][name]"></h2>
+<h2>First Ship: <input type="text" name="pirate[ships][][type]"></h2>
+<h2>First Ship: <input type="text" name="pirate[ships][][body]"></h2>
+<br>
+<h2>Second Ship: <input type="text" name="pirate[ships][][name]"></h2>
+<h2>Second Ship: <input type="text" name="pirate[ships][][type]"></h2>
+<h2>Second Ship: <input type="text" name="pirate[ships][][body]"></h2>
+<br>
+<input type="submit">
+</form>
