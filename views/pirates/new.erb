@@ -1,9 +1,18 @@
 <form method="get" action="new">
  <h1>Enter Pirate Details:</h1>
  <label for="name">Name:</label>
-   <input type="text" id="name" name=pirate[name]>
+   <input type="text" id="name" name="pirate[name]">
  <label for="weight">Weight:</label>
-   <input type="text" id="weight" name="weight">
+   <input type="text" id="weight" name="pirate[weight]">
  <label for = "height">Height:</label>
-   <input type="text" id="height" name="height">
+   <input type="text" id="height" name="pirate[height]">
+ <br>
+ <br>
+<h1>Enter Details for Ship 1:</h1>
+ <label for="name">Name:</label>
+  <input type="text" id="name" name="pirate[ships][][name]">
+ <lable for="type">Type:</label>
+  <input type="text" id="type" name="pirate[ships][][type]">
+ <label for="booty">Booty:</label>
+  <input type="text" id="booty" name="pirate[ships][][booty]">
 </form>
