@@ -1,3 +1,5 @@
+require 'pry'
+
 class Pirate
   attr_reader :name, :weight, :height
   @@all = []
@@ -7,6 +9,7 @@ class Pirate
       @name = name
       @weight = weight
       @height = height
+      binding.pry
     end
     @@all << self
   end

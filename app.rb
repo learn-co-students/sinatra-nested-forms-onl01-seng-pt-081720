@@ -12,8 +12,7 @@ module FormsLab
     end
 
     post '/show' do
-      puts params[:pirate]
-      #erb :'/pirates/show'
+      erb :'/pirates/show'
     end
 
   end
