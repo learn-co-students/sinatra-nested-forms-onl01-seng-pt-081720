@@ -9,7 +9,6 @@ class Pirate
       @name = name
       @weight = weight
       @height = height
-      binding.pry
     end
     @@all << self
   end
