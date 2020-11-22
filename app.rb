@@ -1,5 +1,5 @@
 require './environment'
-
+require 'pry'
 module FormsLab
   class App < Sinatra::Base
 
@@ -11,7 +11,9 @@ module FormsLab
       erb :'/pirates/new'
     end
 
-    post '/show' do
+    post '/pirates' do
+      pirate = Pirate.new(params[:pirate])
+      binding.pry
       erb :'/pirates/show'
     end
 
