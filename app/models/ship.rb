@@ -2,7 +2,8 @@ class Ship
   attr_reader :name, :type, :booty
   @@all = []
 
-  def initialize(params)
+  def initialize(params[0])
+     binding.pry
       @name = params[:name]
       @type = params[:type]
       @booty = params[:booty]
