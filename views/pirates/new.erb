@@ -1,11 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pirate Ships</title>
+</head>
+<body>
 <h1>Make your form here</h1>
-<label>
-  <form action "/pirates" method = "post">
-    Pirate Name: <input type="text", name="pirate[name]">
-    Pirate Weight: <input type="text", name="pirate[weight]">
-    Pirate Height: <input type="text", name="pirate[height]">
-    Ship Name: <input type="text", name="pirate[ship][][name]">
-    Ship Type: <input type="text", name="pirate[ship][][type]">
-    Ship booty: <input type="text", name="pirate[ship][][booty]">
+  <form action="/pirates" method = "post">
+    <h2> Pirate </h2>
+    <p><label for="pirate[name]"> Pirate Name: </label>
+    <input type="text" id="pirate[name]" name="pirate[name]"></p>
+
+    <p><label for="pirate[weight]"> Pirate Weieght: </label>
+    <input type="text" id="pirate[weight]" name="pirate[weight]"></p>
+    
+    <p><label for="pirate[height]"> Pirate Height: </label>
+    <input type="text" id="pirate[height]" name="pirate[height]"></p>
+    
+    <h2>Ship Number One</h2>
+    <p><label for="ship_name_1"> Ship Number One - Name: </label>
+    <input type="text" id="ship_name_1" name="pirate[ships][][name]"></p>
+    
+    <p><label for="ship_type_1"> Ship Number One - Type: </label>
+    <input type="text" id="ship_type_1" name="pirate[ships][][type]"></p>
+    
+    <p><label for="ship_booty_1"> Ship Number One - Booty: </label>
+    <input type="text" id="ship_booty_1" name="pirate[ships][][booty]"></p>
+    
+    <h2>Ship Number Two</h2>
+    <p><label for="ship_name_2"> Ship Number Two - Name: </label>
+    <input type="text" id="ship_name_2" name="pirate[ships][][name]"></p>
+    
+    <p><label for="ship_type_2"> Ship Number Two - Type: </label>
+    <input type="text" id="ship_type_2" name="pirate[ships][][type]"></p>
+    
+    <p><label for="ship_booty_2"> Ship Number Two - Booty: </label>
+    <input type="text" id="ship_booty_2" name="pirate[ships][][booty]"></p>
+    
+    <input type="submit" value="Submit">
   </form>
-</label>
+</body>
+</html>
